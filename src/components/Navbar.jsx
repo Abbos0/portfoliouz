@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-
+  import React, {  useState } from 'react'
 
 // icons 
 import { HiMiniBars2 } from "react-icons/hi2";

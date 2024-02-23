@@ -1,34 +1,37 @@
 import React, { useState } from 'react'
-import { HiBars2 } from "react-icons/hi2";
+
+
+// icons 
+import { HiMiniBars2 } from "react-icons/hi2";
+import { MdOutlineCancel } from "react-icons/md";
+
 const Navbar = () => {
 
+    const [toggle,setToggle] = useState(false)
+    console.log(toggle);
 
-  const [toggle,setToggle] = useState(false)
-  
-  console.log(toggle);
-  return (
+    return (
+      <nav className='containerr fixed w-full h-[80px] backdrop-blur flex justify-between items-center'>
+        <div className='text-[30px] font-bold'>
+            Abbos.
+        </div>
 
-    <nav className='containerr  fixed w-full h-[80px] backdrop-blur text-[20px] flex justify-between items-center'>
-      
-      <div className='text-[30px] font-bold'>
-        Abbos
-      </div>
-      
-          <ul className={`flex md:flex-row flex-col  gap-6 text-[#6b7688] font-bold  uppercase md:bg-[transparent] md:static bg-[white] md:w-auto  w-80% md:h-auto h-[100vh] ${toggle ? 'right-0' : 'right-[-100%]'} top-[80px] absolute transition-[0.8s] md:p-0 p-10`}>
-            <li><a href="#"className='links' >Home</a></li>
-            <li><a href="#" className='links' >Skills</a></li>
-            <li><a href="#" className='links' >My works</a></li>
-            <li><a href="#" className='links' >Contact</a></li>
-        </ul>
-     
-      
-      <div className='flex gap-5'>
-        <div>RU</div>   
-        <div>ENG</div>
-      </div>
-      <div className=' p-1 text-[25px] bg-[#313bac] rounded-full text-[white] md:hidden block 'onClick={()=>setToggle(!toggle)}>
-          <HiBars2 />
-      </div>
+            <ul className={`flex md:flex-row flex-col gap-6 text-[#6b7688] font-[600] uppercase md:bg-[transparent] md:w-auto md:static bg-[white]  w-[80%] ${toggle ? 'right-0' : 'right-[-100%]'} top-[80px] md:h-auto h-[100vh] absolute transition-[1s] md:p-0 p-10`}>
+                <li><a href="#" className='links'>Home</a></li>
+                <li><a href="#" className='links'>Skills</a></li>
+                <li><a href="#" className='links'>My Works</a></li>
+                <li><a href="#" className='links'>Contact</a></li>
+            </ul>
+
+        <div className='flex gap-5 '>
+            <div>RU</div>
+            <div>ENG</div>
+        </div>
+
+        {/* bars  */}
+        <div className='p-1 bg-[#313bac] text-[white] rounded-full text-[25px] md:hidden block' onClick={()=>setToggle(!toggle)}>
+            {toggle ? <MdOutlineCancel /> : <HiMiniBars2/>} 
+        </div>
     </nav>
   )
 }

@@ -11,7 +11,7 @@ const Header = () => {
                     <span className='font-bold text-[30px]'>Abbos</span>
                 </p>
             </div>
-            <div className=' bg-[white]w-full max-w-[300px] p-3  text-slate-400 text-[20px] rounded-[10px] shadow-lg'>FRONTEND/REACT DEVELOPER</div>
+            <div className=' bg-[white] w-full max-w-[300px] p-3  text-slate-400 text-[20px] rounded-[10px] shadow-lg'>FRONTEND/REACT DEVELOPER</div>
             
             <button type="button" className='text-white bg-[#313bac] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-7 py-4 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800'>Downlaod CV</button>
         </div>

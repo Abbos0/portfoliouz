@@ -17,7 +17,7 @@ const Header = () => {
                 </p>
             </div>
             <div className='w-full bg-[white] max-w-[300px] p-3 text-slate-400 text-[14px] lg:text-[18px] text-center  rounded-[15px] shadow-lg'>FRONTEND/REACT DEVELOPER</div>
-            <a href='rezume.pdf' download type="button" class="text-white bg-[#313bac] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-7 py-4 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Downlaod CV</a>
+            <a href='rezume.pdf' download  className="text-white bg-[#313bac] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-7 py-4 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Downlaod CV</a>
         </div>
 
         {/* gif for developer  */}

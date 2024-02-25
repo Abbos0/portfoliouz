@@ -1,6 +1,6 @@
 import React from 'react'
 import { SkillsData } from '../database/skills.db'
-import Social from './Social';
+// import Social from './Social';
 const Skills = () => {
 
     console.log(SkillsData );
@@ -15,15 +15,14 @@ const Skills = () => {
         {SkillsData.map((item)=>(
             <div key={item.id}>
                 <div className='w-[100px] h-[100px] rounded-full bg-[#fef4f5] flex justify-center items-center hover:shadow-lg'>
-                     <img src={item.id} alt="img" className='w-[50px] h-[50px]'/>
+                     <img src={item.img} alt="img" className='w-[50px] h-[50px]'/>
                 </div>
                    <div className='text-center mt-2 text-[14px]'>{item.title}</div>
             </div>
         ))}
       
       </div>
-      <div className='relative '>
-        <Social />
+      <div >
         <div className='text-[14px] text-right w-[90%] mt-5 '>@2024 ABBOS NORQULOV</div>
       </div>
                 

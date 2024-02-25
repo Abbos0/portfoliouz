@@ -7,9 +7,10 @@ const Main = () => {
   return (
     <div style={{scrollBehavior:"smooth"}}>
       
-    <Navbar/>
-    <Header/>
-    <Skills/>
+      <Navbar/>
+      <Header/>
+      <Skills/>
+
     </div>
   )
 }

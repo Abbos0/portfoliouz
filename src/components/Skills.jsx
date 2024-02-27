@@ -39,7 +39,7 @@ import { Fade } from 'react-reveal'
 const Skills = () => {
 
   return (
-    <div className='h-auto md:h-[100vh] relative'>
+    <div className='h-auto md:h-[100vh] '>
         <div className='font-bold flex gap-2 text-[35px] md:text-[50px] my-10 md:my-16 justify-center'>
             <span>My</span>
             <span className='text-[#313bac]'>Skills</span>
@@ -56,7 +56,7 @@ const Skills = () => {
         </Fade>
             ))}
         </div>
-        <div className='text-[14px] py-5 text-right w-[90%] md:absolute bottom-[20px] right-[40px]'>@2024 JAMSHID ZAYNIYEV</div>
+        <div className='text-[14px] py-5 text-right w-[90%]  bottom-[20px] right-[40px]'>@2024 JAMSHID ZAYNIYEV</div>
     </div>
   )
 }

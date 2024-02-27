@@ -12,7 +12,7 @@ const Navbar = () => {
     const [onclick,setOnclick] = useState(true)
 
     return (
-      <nav className='containerr fixed w-full h-[80px] backdrop-blur flex justify-between items-center'>
+      <nav className='z-10 containerr fixed w-full h-[80px] backdrop-blur flex justify-between items-center'>
         <div className='text-[30px] font-bold'>
             Abbos.
         </div>

@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Header from '../components/Header'
 import Skills from '../components/Skills'
+import Works from '../components/Works'
 
 const Main = () => {
   return (
@@ -10,6 +11,7 @@ const Main = () => {
       <Navbar/>
       <Header/>
       <Skills/>
+      <Works/>
 
     </div>
   )

@@ -1,4 +1,3 @@
-
 import React from 'react'
 import Gif from "../assets/dev.gif"
 import ReactImg from "../assets/react.png"
@@ -33,7 +32,7 @@ const Header = () => {
         </div>
         </Zoom>
         <Fade right>
-        <div className='flex lg:flex-col gap-10 py-5'>
+        <div className='flex lg:flex-col gap-10 py-5 mt-5'>
             <div className='w-[75px] h-[75px] lg:w-[150px] lg:h-[150px] rounded-full bg-[white] shadow-2xl flex justify-center items-center'>
                 <img src={ReduxImg} className='w-[80%]' alt="img" />
             </div>

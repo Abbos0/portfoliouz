@@ -11,13 +11,13 @@ const Contact = () => {
            <div className='flex flex-wrap justify-center items-center gap-5 md:gap-10 my-5'>
             <a href='https://www.linkedin.com/in/abbos-norqulov-5953992b7/' target='blank' className='flex min-w-[300px] h-[70px] px-10 justify-start gap-2 items-center bg-[#fef4f5] rounded-[10px] shadow-md hover:shadow-lg cursor-pointer'>
                 <img src={LinkedIn} alt="Telegram" className='w-[50px]' />
-                <span className='text-[#5e6064]'>in/ekaterina-kutovaya</span>
+                <span className='text-[#5e6064]'>in/abbos-norqulov</span>
             </a>
             <a href='https://t.me/boss0_002' target='blank' className='flex min-w-[300px] h-[70px] px-10 justify-start gap-2 items-center bg-[#fef4f5] rounded-[10px] shadow-md hover:shadow-lg cursor-pointer'>
                 <img src={Telegram} alt="Telegram" className='w-[50px]' />
                 <span className='text-[#5e6064]'>t.me/boss0_002</span>
             </a>
-            <a href='tel:+998908292171' target='blank' className='flex min-w-[300px] h-[70px] px-10 justify-start gap-2 items-center bg-[#fef4f5] rounded-[10px] shadow-md hover:shadow-lg cursor-pointer'>
+            <a href='tel:+998936665593' target='blank' className='flex min-w-[300px] h-[70px] px-10 justify-start gap-2 items-center bg-[#fef4f5] rounded-[10px] shadow-md hover:shadow-lg cursor-pointer'>
                 <img src={PhoneP} alt="Telegram" className='w-[20px]' />
                 <span className='text-[#5e6064]'>  +(998) 93 666 55 93</span>
             </a>

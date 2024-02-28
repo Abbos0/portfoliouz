@@ -3,7 +3,7 @@
 // icons 
 import { HiMiniBars2 } from "react-icons/hi2";
 import { MdOutlineCancel } from "react-icons/md";
-
+import Symbole from "../assets/symbole.png"
 const Navbar = () => {
 
     const [toggle,setToggle] = useState(false)
@@ -13,8 +13,9 @@ const Navbar = () => {
 
     return (
       <nav className='z-10 containerr fixed w-full h-[80px] backdrop-blur flex justify-between items-center'>
-        <div className='text-[30px] font-bold'>
-            Abbos.
+        <div className=' font-bold flex'>
+            Abbos
+            <img src={Symbole} alt="Symbole" className='w-[25px]' />
         </div>
 
             <ul className={`flex md:flex-row flex-col gap-6 text-[#6b7688] font-[600] uppercase md:bg-[transparent] md:w-auto md:static bg-[white]  w-[80%] ${toggle ? 'right-0' : 'right-[-100%]'} top-[80px] md:h-auto h-[100vh] absolute transition-[1s] md:p-0 p-10`}>

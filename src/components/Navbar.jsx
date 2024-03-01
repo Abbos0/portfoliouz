@@ -37,7 +37,7 @@ const Navbar = () => {
                 <li><a href="#contact" className='links' onClick={()=>setToggle(false)}><Translate dictionary={{ru:'КОНТАКТЫ',en:'Contact'}}/></a></li>  
           </ul>
         </Fade>
-        <div className='flex md:gap-5 gap-1  text-[12px]'>
+        <div className='flex md:gap-5 gap-2 text-[14px]  md:text-[12px]'>
             <div onClick={()=>dispatch(setLanguage('ru'))} className={`cursor-pointer ${language === 'ru' ? 'text-[blue] ': 'text-[#6b7688] '}`}>RU</div>
             <div onClick={()=>dispatch(setLanguage('en'))} className={`cursor-pointer ${language === 'en' ? 'text-[blue] ': 'text-[#6b7688] '}`}>ENG</div>
         </div>

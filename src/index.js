@@ -7,6 +7,8 @@ import { Providers } from './redux/provider';
 // import App from './App';
 
 const App = lazy(()=>import('./App'))
+const Loader = lazy(()=>import('./components/Loader'))
+
 ////////bu joy ya'ni lazy loading uchun bo'lyapti
 /* const App = lazy(()=>import('./App'))
 <Suspense fallback={<h1>loading....</h1>}>
@@ -16,7 +18,9 @@ const App = lazy(()=>import('./App'))
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Suspense fallback={<h1>loading...</h1>}>
+    {/* <Suspense fallback={<h1>loading...</h1>}> */}
+    <Suspense fallback={<Loader/>}>
+
       <Providers>
             <App />
       </Providers>

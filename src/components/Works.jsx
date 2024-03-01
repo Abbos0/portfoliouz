@@ -4,7 +4,7 @@ import { Zoom } from 'react-reveal'
 
 const Works = () => {
   return (
-    <div className='bg-[#edf2f8] py-5'>
+    <div className='bg-[#edf2f8] py-5' id='works'>
         <div className='font-bold flex gap-2 text-[35px] md:text-[50px] my-10 md:my-16 justify-center'>
             <span>My</span>
             <span className='text-[#313bac]'>Works</span>

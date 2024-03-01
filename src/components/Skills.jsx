@@ -6,7 +6,7 @@ import { Zoom } from 'react-reveal'
 const Skills = () => {
 
   return (
-    <div className='h-auto md:h-[100vh] relative '>
+    <div className='h-auto md:h-[100vh] relative 'id='skills'>
         <div className='font-bold flex gap-2 text-[35px] md:text-[50px] my-10 md:my-16 justify-center'>
             <span>My</span>
             <span className='text-[#313bac]'>Skills</span>

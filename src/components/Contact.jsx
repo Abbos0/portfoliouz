@@ -3,9 +3,10 @@ import Telegram from "../assets/telegramP.png"
 import LinkedIn from "../assets/LinkedInP.png"
 import PhoneP from "../assets/PhoneP.png"
 import { Zoom } from 'react-reveal'
+import Inputs from './Inputs'
 const Contact = () => {
   return (
-    <div>
+    <div id='contact'>
         <div className='text-[35px] my-10 md:text-[44px] text-center font-bold'>Contact Me</div>
         <div className='max-w-[700px] w-full m-auto'>
            <div className='flex flex-wrap justify-center items-center gap-5 md:gap-10 my-5'>
@@ -24,6 +25,7 @@ const Contact = () => {
                 </a>
               </Zoom>
            </div>
+           <Inputs/>
         </div>
     </div>
   )

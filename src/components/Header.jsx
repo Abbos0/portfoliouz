@@ -10,7 +10,7 @@ import { Fade ,Flip,Zoom} from 'react-reveal';
 
 const Header = () => {
   return (
-    <div className='px-3 lg:px-10 pt-[110px] lg:pt-0 bg-[#EDF2F8] w-full lg:h-[100vh] flex lg:flex-row flex-col items-center justify-center gap-10'>
+    <div className='px-3 lg:px-10 pt-[110px] lg:pt-0 bg-[#EDF2F8] w-full lg:h-[100vh] flex lg:flex-row flex-col items-center justify-center gap-10' id='home'>
         {/* Download CV  */}
         <Flip right>
         <div className='flex flex-col gap-6 md:gap-10 items-center md:items-end w-full max-w-[400px]'>

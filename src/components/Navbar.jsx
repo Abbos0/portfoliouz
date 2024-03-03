@@ -30,7 +30,7 @@ const Navbar = () => {
         </Zoom>
       </div>
         <Fade center>
-          <ul className={`flex md:flex-row flex-col gap-6 text-[#6b7688] font-[600] uppercase md:bg-[transparent] md:w-auto md:static bg-[white]  w-[80%] ${toggle ? 'right-0' : 'right-[-100%]'} top-[80px] md:h-auto  absolute transition-[1s] md:p-0 p-10 text-[14px]`}>
+          <ul className={`flex md:flex-row flex-col gap-6 text-[#6b7688] font-[600] uppercase md:bg-[transparent] md:w-auto md:static bg-[white]  w-[50%] ${toggle ? 'right-0' : 'right-[-100%]'} top-[80px] md:h-auto  absolute transition-[1s] md:p-0 p-10 text-[14px]`}>
                 <li><a href="#home" className='links' onClick={()=>setToggle(false)}><Translate dictionary={{ru:'ГЛАВНАЯ',en:'Home'}}/></a></li>
                 <li><a href="#skills" className='links' onClick={()=>setToggle(false)}><Translate dictionary={{ru:'НАВЫКИ',en:'Skills'}}/></a></li>
                 <li><a href="#works" className='links' onClick={()=>setToggle(false)}><Translate dictionary={{ru:'МОИ РАБОТЫ',en:'My Works'}}/></a></li>

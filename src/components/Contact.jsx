@@ -20,7 +20,7 @@ const Contact = () => {
                 </a>
                 <a href='https://t.me/boss0_002' target='blank' className='flex min-w-[300px] h-[70px] px-10 justify-start gap-2 items-center bg-[#fef4f5] rounded-[10px] shadow-md hover:shadow-lg cursor-pointer'>
                     <img src={Telegram} alt="Telegram" className='w-[50px]' />
-                    <span className='text-[#5e6064]'><Translate dictionary={{ru:'t.me/босс0_002 ',en:'t.me/boss0_002'}}/></span>
+                    <span className='text-[#5e6064]'><Translate dictionary={{ru:'telegram/Аббос ',en:'telegram/abbos'}}/></span>
                 </a>
                 <a href='tel:+998936665593' target='blank' className='flex min-w-[300px] h-[70px] px-10 justify-start gap-2 items-center bg-[#fef4f5] rounded-[10px] shadow-md hover:shadow-lg cursor-pointer'>
                     <img src={PhoneP} alt="Telegram" className='w-[20px]' />

@@ -25,8 +25,8 @@ const Navbar = () => {
     <nav className='containerr z-10 fixed w-full h-[80px] backdrop-blur flex justify-between items-center'>
       <div className='flex'> 
         <Zoom>
-            <p className='font-bold md:text-[25px] text-[20px]'>Abbos</p>
-            <img src={Symbole} alt="Symbole" className='md:w-[35px] w-[20px]' />
+            <p className='font-bold md:text-[25px] text-[20px]'>Abbos </p>
+            <img src={Symbole} alt="Symbole" className='md:w-[35px] w-[25px]' />
         </Zoom>
       </div>
         <Fade center>

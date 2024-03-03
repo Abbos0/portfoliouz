@@ -10,7 +10,7 @@ const Main = () => {
     <div style={{scrollBehavior:"smooth"}}>
       
       <Navbar/>
-      {/* <Header/> */}
+      <Header/>
       <Skills/>   
       <Works/>
       <Contact/>

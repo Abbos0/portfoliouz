@@ -9,11 +9,11 @@ const Main = () => {
   return (
     <div style={{scrollBehavior:"smooth"}}>
       
-      <Navbar/>
-      <Header/>
-      <Skills/>
+      {/* <Navbar/> */}
+      {/* <Header/> */}
+      <Skills/>   
       <Works/>
-      {/* <Contact/> */}
+      <Contact/>
 
     </div>
   )

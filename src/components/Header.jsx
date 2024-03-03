@@ -35,7 +35,7 @@ const Header = () => {
             </div>
         </Zoom>
         <Fade right>
-            {/* <div className='flex justify-center items-center lg:gap-8 gap-2 '>
+            <div className='flex lg:flex-col  justify-center items-center lg:gap-8 gap-2 '>
                 <div className='w-[75px] h-[75px] lg:w-[150px] lg:h-[150px] rounded-full bg-[white] shadow-2xl flex justify-center items-center'>
                     <img src={ReduxImg} className='w-[100px]' alt="img" />
                 </div>
@@ -45,20 +45,8 @@ const Header = () => {
                 <div className='w-[50px] h-[50px] lg:w-[100px] lg:h-[100px] rounded-full bg-[white] shadow-2xl flex justify-center items-center'>
                     <img src={Sass} className='w-[80%]' alt="img" />
                 </div>
-            </div>  */}
+            </div>  
 
-<div className='flex lg:flex-col gap-10 py-5'>
-            <div className='w-[75px] h-[75px] lg:w-[150px] lg:h-[150px] rounded-full bg-[white] shadow-2xl flex justify-center items-center'>
-                <img src={ReduxImg} className='w-[80%]' alt="img" />
-            </div>
-            <div className='w-[100px] h-[100px] lg:w-[200px] lg:h-[200px] rounded-full bg-[white] shadow-2xl flex justify-center items-center'>
-            <img src={ReactImg} className='w-[90%]' alt="img" />
-
-            </div>
-            <div className='w-[50px] h-[50px] lg:w-[100px] lg:h-[100px] rounded-full bg-[white] shadow-2xl flex justify-center items-center'>
-            <img src={Sass} className='w-[80%]' alt="img" />
-            </div>
-        </div>
         </Fade> 
 
         <Social/>

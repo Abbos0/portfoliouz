@@ -119,7 +119,7 @@ const Inputs = () => {
           required
           onChange={(e) => setMessagetext(e.target.value)}
           placeholder="Your Message"
-          className="w-full h-40 md:h-150 font-medium italic capitalize border-none outline-none px-[13px] py-[15px] rounded-[10px] bg-[#edf2f8] hover:shadow-lg"
+          className="w-full h-40 md:h-150 font-medium italic  border-none outline-none px-[13px] py-[15px] rounded-[10px] bg-[#edf2f8] hover:shadow-lg"
         ></textarea>
         <button
           type="submit"

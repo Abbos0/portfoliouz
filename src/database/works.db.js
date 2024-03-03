@@ -2,6 +2,8 @@ import WorkImg_1 from "../assets/workImg-1.jpg"
 import WorkImg_2 from "../assets/workImg-2.jpg"
 import WorkImg_3 from "../assets/workImg-3.jpg"
 
+import Translate from '../utils/Translate'
+
 export const WorksData = [
     {
         id:1,

@@ -56,6 +56,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import SendAfter from './SendAfter';
 
+// import Translate from '../utils/Translate'
+
 const Inputs = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
@@ -101,7 +103,7 @@ const Inputs = () => {
           required
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-          placeholder="Your Name"
+          placeholder="Your Name" 
           className="w-full capitalize font-semibold border-none outline-none px-[13px] py-[15px] rounded-[10px] bg-[#edf2f8] hover:shadow-lg"
         />
         <input

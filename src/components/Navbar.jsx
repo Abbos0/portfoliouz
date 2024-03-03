@@ -5,8 +5,8 @@ import Symbole from "../assets/symbole.png"
 import { Fade, Zoom } from 'react-reveal'
 
 import Translate from '../utils/Translate';
-
 import { setLanguage } from '../redux/navbarSlice'
+
 import { useDispatch, useSelector } from 'react-redux';
 
 
@@ -31,7 +31,7 @@ const Navbar = () => {
       </div>
         <Fade center>
           <ul className={`flex md:flex-row flex-col gap-6 text-[#6b7688] font-[600] uppercase md:bg-[transparent] md:w-auto md:static bg-[white]  w-[80%] ${toggle ? 'right-0' : 'right-[-100%]'} top-[80px] md:h-auto  absolute transition-[1s] md:p-0 p-10 text-[14px]`}>
-          <li><a href="#home" className='links' onClick={()=>setToggle(false)}><Translate dictionary={{ru:'ГЛАВНАЯ',en:'Home'}}/></a></li>
+                <li><a href="#home" className='links' onClick={()=>setToggle(false)}><Translate dictionary={{ru:'ГЛАВНАЯ',en:'Home'}}/></a></li>
                 <li><a href="#skills" className='links' onClick={()=>setToggle(false)}><Translate dictionary={{ru:'НАВЫКИ',en:'Skills'}}/></a></li>
                 <li><a href="#works" className='links' onClick={()=>setToggle(false)}><Translate dictionary={{ru:'МОИ РАБОТЫ',en:'My Works'}}/></a></li>
                 <li><a href="#contact" className='links' onClick={()=>setToggle(false)}><Translate dictionary={{ru:'КОНТАКТЫ',en:'Contact'}}/></a></li>  

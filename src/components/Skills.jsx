@@ -3,13 +3,15 @@ import React from 'react'
 import { SkillsData } from '../database/skills.db'
 import { Zoom } from 'react-reveal'
 
+import Translate from '../utils/Translate'
+
 const Skills = () => {
 
   return (
     <div className='h-auto md:h-[100vh] relative 'id='skills'>
         <div className='font-bold flex gap-2 text-[35px] md:text-[50px] my-10 md:my-16 justify-center'>
-            <span>My</span>
-            <span className='text-[#313bac]'>Skills</span>
+            <span><Translate dictionary={{ru:'Меня',en:'My'}}/></span>
+            <span className='text-[#313bac]'><Translate dictionary={{ru:'НАВЫКИ',en:'Skills'}}/></span>
         </div>
         <div className='flex flex-wrap gap-5 md:gap-10  py-10 justify-center items-center w-[90%] md:w-[70%] m-auto'>
             {SkillsData.map((item)=>(
@@ -23,7 +25,7 @@ const Skills = () => {
                 </Zoom>
             ))}
         </div>
-        <div className='text-[14px] py-5 text-right w-[90%]  bottom-[20px] right-[40px]'>@2024 ABBOS NORQULOV</div>
+        <div className='text-[14px] py-5 text-right w-[90%]  bottom-[20px] right-[40px]'><Translate dictionary={{ru:'@2024 АББОС НОРКУЛОВ',en:'@2024 ABBOS NORQULOV'}}/></div>
     </div>
   )
 }

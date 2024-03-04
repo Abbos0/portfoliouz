@@ -32,7 +32,7 @@ const Header = () => {
                 <img src={Gif} alt="Gif" />
             </div>
         </Zoom>
-            <div className='flex lg:flex-col  justify-center items-center lg:gap-8 gap-3 '>
+            <div className='flex lg:flex-col  justify-center items-center lg:gap-8 gap-3 lg:mt-4'>
                 <div className='w-[75px] h-[75px] lg:w-[150px] lg:h-[150px] rounded-full bg-[white] shadow-2xl flex justify-center items-center'>
                     <img src={ReduxImg} className='w-[75%]'  alt="img" />
                 </div>

@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    language: "ru",
+    language: "en",
   };
 
 export const navbarSlice = createSlice({

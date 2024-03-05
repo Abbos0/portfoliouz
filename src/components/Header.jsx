@@ -8,7 +8,7 @@ import Social from './Social'
 import Translate from '../utils/Translate'
 
 //animation
-import { Fade ,Flip,Zoom} from 'react-reveal';
+import {Flip,Zoom} from 'react-reveal';
 
 const Header = () => {
 

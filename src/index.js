@@ -20,11 +20,10 @@ root.render(
   <React.StrictMode>
     {/* <Suspense fallback={<h1>loading...</h1>}> */}
     <Suspense fallback={<Loader/>}>
-
       <Providers>
             <App />
       </Providers>
-</Suspense>
+    </Suspense>
   </React.StrictMode>
 );
 

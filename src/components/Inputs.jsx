@@ -4,7 +4,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import SendAfter from './SendAfter';
 
-import Translate from '../utils/Translate'
+// import Translate from '../utils/Translate'
+
 import { useSelector } from 'react-redux';
 
 const Inputs = () => {
@@ -53,7 +54,7 @@ const Inputs = () => {
           required
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-          placeholder={`${language === "ru" ? "wwww" : "Your Name"}`}
+          placeholder={`${language === "ru" ? "Ваше имя" : "Your Name"}`}
           className="w-full capitalize font-semibold border-none outline-none px-[13px] py-[15px] rounded-[10px] bg-[#edf2f8] hover:shadow-lg"
         />
         <input
@@ -61,22 +62,19 @@ const Inputs = () => {
           required
           value={email}
           onChange={(e) => setEmail(e.target.value.toLowerCase())}
-          placeholder="Your Email"
+          placeholder={`${language === "ru" ? "Ваш адрес электронной почты " : "Your Email"}`}
           className="w-full font-medium border-none outline-none px-[13px] py-[15px] rounded-[10px] bg-[#edf2f8] hover:shadow-lg"
         /> 
         <textarea
           value={messagetext}
           required
           onChange={(e) => setMessagetext(e.target.value)}
-          placeholder="Your Message"
+          placeholder={`${language === "ru" ? "Ваше Сообщение" : "Your Message"}`}
           className="w-full h-40 md:h-150 font-medium italic  border-none outline-none px-[13px] py-[15px] rounded-[10px] bg-[#edf2f8] hover:shadow-lg"
         ></textarea>
-        <button
-          type="submit"
-          className="text-white bg-[#313bac] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-7 py-4 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-        >
-          Send Message
-        </button>
+
+        <button type="submit" className="text-white bg-[#313bac] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-7 py-4 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">{`${language === "ru" ? "Отправить " : "Send Message"}`}</button>
+      
       </form>
       {msg && <SendAfter />}
     </div>

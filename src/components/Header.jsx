@@ -17,7 +17,7 @@ const Header = () => {
         <Flip right>
         <div className='flex flex-col gap-6 md:gap-10 items-center md:items-end w-full max-w-[400px]'>
             <div className='flex justify-center items-center bg-[white] gap-3 md:gap-10 w-full max-w-[350px] p-1 lg:p-3  rounded-[15px] shadow-lg'>
-                <p className='text-[35px] lg:text-[40px]'>👋</p>
+                <a href='https://minimal-phi-two.vercel.app/' className='text-[35px] lg:text-[40px]'>👋</a>
                 <p className='flex flex-col'>
                     <span className='text-slate-400 text-[18px] lg:text-[20px]'><Translate dictionary={{ru:'Меня зовут',en:'Hello, I am'}}/></span>
                     <span className='font-bold text-[25px] lg:text-[30px]'><Translate dictionary={{ru:'Аббос',en:'Abbos'}}/></span>
@@ -42,6 +42,7 @@ const Header = () => {
                 <div className='w-[50px] h-[50px] lg:w-[100px] lg:h-[100px] rounded-full bg-[white] shadow-2xl flex justify-center items-center' >
                     <img src={Sass} className='w-[80%]'   alt="img" />
                 </div>
+               
             </div>  
 
         <Social/> 

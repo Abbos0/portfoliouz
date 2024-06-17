@@ -9,6 +9,7 @@ import SendAfter from './SendAfter';
 import { useSelector } from 'react-redux';
 
 const Inputs = () => {
+  const [sitename, setSitename] = useState('');
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [messagetext, setMessagetext] = useState('');
@@ -19,7 +20,7 @@ const Inputs = () => {
         event.preventDefault();
         console.log(username, email, messagetext);
     
-        const text = `%0A 👦 Username: ${username}  %0A 📩Email:  ${email} %0A  📝 Message: ${messagetext}  `;
+        const text = `%0A 🔐 Site Name: ${sitename} portfoliouz.vercel.app %0A 👦 Username: ${username}  %0A 📩Email:  ${email} %0A  📝 Message: ${messagetext}  `;
         const chatId = -1002128588085;
         const token = '6834109969:AAEhUkHL4MsMs8Be2CWGY9oC7KXSbW8JHAM';
     
@@ -28,6 +29,7 @@ const Inputs = () => {
         fetch(url)
           .then((response) => response.json())
           .then((data) => {
+            setSitename('');
             setUsername('');
             setEmail('');
             setMessagetext('');
@@ -49,6 +51,12 @@ const Inputs = () => {
         onSubmit={handleSubmit}
         className={`my-20 flex flex-col gap-5 justify-center items-center m-5 ${msg ? 'hidden' : ''}`}
       >
+          <button
+          type="checkbox"
+          required
+          value={sitename}
+          onChange={(e) => setSitename(e.target.value)}
+        />
          <input
           type="text"
           required
